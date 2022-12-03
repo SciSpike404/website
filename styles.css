@@ -1,11 +1,82 @@
-body {
-    background-color: powderblue;
+:root {
+    --background-color:rgb(176,224,230);
+    --border-color: rgb(0,0,0,0.9);
 }
 
-h1 {
+body {
+    background-color:var(--background-color);
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    height: 100vh;
+    overflow: hidden;
+}
 
+li, a, button {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav > .nav-section {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+}
+
+
+
+/*
+h1 {
+    color: rgb(95, 95, 95);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+}
+
+li a{
+    text-align:center;
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(255, 82, 82);
+    color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.active {
+    background-color: #7f7f7f;
+    color: white;
+}
+
+content {
+    width: 75%;
 }
 
 p {
-    
+    color: #000;
+    margin:0;
 }
+*/
